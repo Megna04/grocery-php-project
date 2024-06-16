@@ -1,16 +1,16 @@
 <?php
-    include("connect.php");
+   // include("connect.php");
 
     if (isset($_POST['btn']))
     {
       $date=$_POST['idate'];
-      $q="select * from grocerytb where Date='$date'";
-      $query=mysqli_query($con,$q);
+     // $q="select * from grocerytb where Date='$date'";
+      //$query=mysqli_query($con,$q);
     } 
 	else 
 	{
-      $q= "select * from grocerytb";
-      $query=mysqli_query($con,$q);
+     // $q= "select * from grocerytb";
+     // $query=mysqli_query($con,$q);
     }
 ?>
 
@@ -48,8 +48,8 @@
             <div class="row mt-4">
                 
              <?php
-                  while ($qq=mysqli_fetch_array($query)) 
-                  {
+                 // while ($qq=mysqli_fetch_array($query)) 
+                 // {
                   
              ?>
 
@@ -78,7 +78,7 @@
                 <?php
                   
 
-                  }
+                //  }
                 ?>
                 
             </div>
